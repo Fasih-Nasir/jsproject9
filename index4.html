@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var wel=window.prompt("Enter Your Name");
+        var loc=window.prompt("Enter Your Current Location")
+        var number=window.prompt("Enter Your Phone Number");
+        var devl=window.prompt("Delivery Or Take Away ??")
+        alert("HI "+""+ wel +" Welcome To Our Resturant");
+        var item=prompt("In Our Menu\n(1)Biryani\n(2)burger\n(3)Pizza\n write Number or Name For Order")
+        var item1="biryani";
+        var item2="burger";
+        var item3="pizza";
+        
+        if(item === "biryani" || item == 1){
+       
+            
+            var birtype=prompt("Flavour \n(1)chicken\n(2)beef\n(3)mutton\n write Number or Name For Order")
+            if(birtype === "chicken" || birtype == 1){
+                var birpz=window.prompt("Price Is Here\n1(1)Plate(150RS)\n(2)1HalfKg(200RS)\n1(3)OneKg(400RS)\n Write a Number for order")
+                if(birpz === "1"){
+                    document.write("Your Order of 1 Plate is Ready Keep Wait ")
+                }
+                else if(birpz === "2"){
+                    document.write("Your Half Kg  is Ready Keep Wait ")
+                }
+                
+                else if(birpz === "3"){
+                    document.write("Your oneKg  is Ready Keep Wait ")
+                }
+                else{
+                    document.write("Your Mention Quantity Is Not Available")
+                }
+                // document.write(`${birtype} is Available`)
+            }
+           else if(birtype === "mutton" || birtype == 2){
+                document.write(`${birtype} is Available`)
+            }
+            else if(birtype === "beef" || birtype == 3){
+                document.write(`${birtype} is Available`)
+            }
+            else{
+                document.write(`Sorry Due To Some Reason ${birtype} is not Available` )
+            }
+            
+       
+        }
+  
+        else if(item === "burger"|| item == 2){
+var burtype=prompt("Flavour \n(1)zinger\n(2)beef\n(3)egg\n write Number or Name For Order")
+if(burtype === "zinger" || burtype == 1){
+    document.write(`Yes ${burtype} Is Available`)
+}
+else if (burtype === "beef" || burtype == 2){
+    document.write(`Yes ${burtype} Is Available`)
+}
+else if (burtype === "egg" || burtype == 3){
+    document.write(`Yes ${burtype} Is Available`)
+}
+else{
+    document.write(`${burtype} Is Not Available`)
+}
+    } 
+    else if(item === "pizza"|| item == 3){
+       
+        var piztype=prompt("Flavour \n(1)afgani\n(2)tikka\n(3)fajita\n write Number or Name For Order")
+        if(piztype === "afghani" || piztype == "1" ){
+            document.write(` yes ${piztype} available` )
+        }
+        else if(piztype === "tikka" || piztype == "2" ){
+            document.write(` yes ${piztype} available` )
+        }
+      else if  (piztype === "fajita" || piztype =="3" ){
+            document.write(` yes ${piztype} available` )
+        }
+        else{
+            document.write(` ${piztype} is not available`)
+        }
+    } 
+        else{
+            document.write(`Sorry ! ${item} Not Available`)
+        }
+        document.write(`<h1>Your Order Detail Is 🔽 </h1>`)
+        document.write("<br>")
+        document.write(`<b> Your Name :</b> ${wel}`)
+        document.write("<br>")
+  
+        document.write(`<b>Your Location : </b>${loc}`)
+        document.write("<br>")
+
+        document.write(`<b>Your Number : </b>${number}`)
+        document.write("<br>")
+        document.write(`<b>Your Delivery :</b> ${devl}`)
+        document.write("<br>")
+        document.write(`<b>Your Food Item :</b> ${item}`)
+        document.write("<br>")
+        document.write(`<b> Your Food Item Flavour :</b> ${birtype}`)
+        document.write("<br>")
+        document.write(`<b> Your Food Item Flavour :</b> ${burtype}`)
+        document.write("<br>")
+        document.write(`<b> Your Food Item Flavour :</b> ${piztype}`)
+        document.write("<br>")
+
+</script>
+</body>
+</html>
